@@ -1,0 +1,17 @@
+﻿Name,Time,Position,Comments,
+Flyterigg1 ut,09:52,N 59°52.110'; E 010°42.017', 15:12:06 Thursday; September 28; 202376.6 mFalse
+Flyterigg1 inn 0m,11:58,N 59°51.741'; E 010°40.945', 15:11:50 Thursday; September 28; 202326.2 mFalse
+Flyterigg1 inn 20m,11:51,N 59°51.952'; E 010°41.793', 15:11:53 Thursday; September 28; 202354.2 mFalse
+Flyterigg1 inn 3m,11:42,N 59°52.016'; E 010°41.625', 15:11:58 Thursday; September 28; 202352.6 mFalse
+Flyterigg1 inn 5m,11:45,N 59°52.058'; E 010°41.737', 15:12:02 Thursday; September 28; 202356.9 mFalse
+
+Flyterigg2 ut,13:47,N 59°52.133'; E 010°42.017', 15:12:11 Thursday; September 28; 202375.4 mFalse
+Flyterigg2 inn 0m,14:23,N 59°52.373'; E 010°41.729', 15:11:51 Thursday; September 28; 202371.0 mFalse
+Flyterigg2 inn 20m,14:35,N 59°52.109'; E 010°41.968', 15:11:57 Thursday; September 28; 202375.7 mFalse
+Flyterigg2 inn 3m,14:27,N 59°52.255'; E 010°41.865', 15:12:00 Thursday; September 28; 202372.1 mFalse
+Flyterigg2 inn 5m,14:30,N 59°52.252'; E 010°41.892', 15:12:03 Thursday; September 28; 202370.6 mFalse
+
+BN1 Lysaker fj,,N 59°52.838'; E 010°38.805', 15:12:49 Thursday; September 28; 202384.6 mFalse
+CP1 Oksenvallflua,,N 59°51.853'; E 010°42.083', 15:14:35 Thursday; September 28; 202385.6 mFalse
+R2 Terskel,,N 59°53.199'; E 010°39.965', 15:14:13 Thursday; September 28; 202352.5 mFalse
+
