@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1699297451 "/Users/alessiocanclini/geo2320_oceanography/cruise/tex/geo2320_report.tex" "/Users/alessiocanclini/geo2320_oceanography/cruise/tex/geo2320_report.pdf" "geo2320_report" 1699297467
+["pdflatex"] 1699360343 "/Users/alessiocanclini/geo2320_oceanography/cruise/tex/geo2320_report.tex" "/Users/alessiocanclini/geo2320_oceanography/cruise/tex/geo2320_report.pdf" "geo2320_report" 1699360359
   "../figures/combined_profiles/Location_A_afternoon_cruise.png" 1699020819 275425 bb8f8083315db471760467220e2ba81a ""
   "../figures/combined_profiles/Location_A_morning_cruise.png" 1699020815 254965 cef9b77dbf49d4c3472485bb06841e2d ""
   "../figures/combined_profiles/Location_C_afternoon_cruise.png" 1699020828 250984 2e1dacf4aaae507450984376389de9c5 ""
@@ -22,8 +22,8 @@
   "../figures/ship_ctd/ship_ctd_Measurement_6_Location_A.png" 1698676889 207845 4d788d54f3e450ffc99951ee221a3e4b ""
   "../figures/station_map_3_stations.png" 1698857967 190361 6659782c2013136b9a64d4c267f48fd2 ""
   "/Users/alessiocanclini/geo2320_oceanography/cruise/data/drifters/studenttokt_20230928.png" 1699281919 607099 1983a6e6544fda68f4662928ca81886c ""
-  "/Users/alessiocanclini/geo2320_oceanography/cruise/tex/geo2320_report.aux" 1699297466 11839 b1105d42e6a36c5d41db6febf958541a ""
-  "/Users/alessiocanclini/geo2320_oceanography/cruise/tex/geo2320_report.tex" 1699297450 28256 49ba7c2888d3482f8ed0cc36ee02c529 ""
+  "/Users/alessiocanclini/geo2320_oceanography/cruise/tex/geo2320_report.aux" 1699360359 11839 9e3e5125d23bb679e2e9686e35d63dfa ""
+  "/Users/alessiocanclini/geo2320_oceanography/cruise/tex/geo2320_report.tex" 1699360342 33140 bf5ddfc752ca62b8894268066785269e ""
   "/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2021/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2021/texmf-dist/fonts/tfm/jknappen/ec/tcrm1000.tfm" 1136768653 1536 e07581a4bb3136ece9eeb4c3ffab8233 ""
@@ -162,13 +162,13 @@
   "/usr/local/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1616695603 5169178 a2ce6e2d73f603b690db6777d06dbccb ""
   "/usr/local/texlive/2021/texmf-var/web2c/pdftex/pdflatex.fmt" 1632167961 2724743 b6633b263123d4f68ac29c048c99c217 ""
   "/usr/local/texlive/2021/texmf.cnf" 1616695596 577 4c1911a7228e554c6032256d3cf5567d ""
-  "geo2320_report.aux" 1699297466 11839 b1105d42e6a36c5d41db6febf958541a "pdflatex"
-  "geo2320_report.out" 1699297466 2086 29902dfba6f690a8794c2025e99c9883 "pdflatex"
-  "geo2320_report.tex" 1699297450 28256 49ba7c2888d3482f8ed0cc36ee02c529 ""
+  "geo2320_report.aux" 1699360359 11839 9e3e5125d23bb679e2e9686e35d63dfa "pdflatex"
+  "geo2320_report.out" 1699360359 2086 29902dfba6f690a8794c2025e99c9883 "pdflatex"
+  "geo2320_report.tex" 1699360342 33140 bf5ddfc752ca62b8894268066785269e ""
   (generated)
   "/Users/alessiocanclini/geo2320_oceanography/cruise/tex/geo2320_report.pdf"
+  "geo2320_report.log"
+  "geo2320_report.out"
+  "geo2320_report.aux"
   "geo2320_report.pdf"
   "/Users/alessiocanclini/geo2320_oceanography/cruise/tex/geo2320_report.log"
-  "geo2320_report.log"
-  "geo2320_report.aux"
-  "geo2320_report.out"

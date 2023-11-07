@@ -97,9 +97,8 @@ On the 28.09.2023 hydrographic measurements where taken on the University of Osl
 \end{enumerate}
 These methods will be presented more thoroughly in section \ref*{sec:methods} followed by a presentation of the results in section \ref*{sec:results}. In addition to the mentioned in-situ measurements, this section will include ocean circulation model results for the same time and positions. Finally, these results will be discussed in section \ref*{sec:discussion}.% followed by some concluding remarcs in section \ref*{sec:conclusion}.
 
-\newpage
 \section{Data and methods}\label{sec:methods}
-All data analysis and plotting was done in Python using the Pandas and Matplotlib libraries.
+All data analysis and plotting was done in Python using the Pandas and Matplotlib libraries. The scripts can be found in two notebooks \href{https://github.com/Alessimc/geo2320_oceanography/blob/main/cruise/hydrographic_plots.ipynb}{here} and \href{https://github.com/Alessimc/geo2320_oceanography/blob/main/cruise/combinedplots.ipynb}{here}. These, although functional, are unfortunately not very readable.
 
 % map
 \setlength{\intextsep}{-30pt}
@@ -109,7 +108,7 @@ All data analysis and plotting was done in Python using the Pandas and Matplotli
         \caption{Three hydrographic measurement locations in the inner Oslo fjord.}
         \label{fig:map_ctd}
 \end{wrapfigure}
-
+\newpage
 \subsection{CTD measurements}
 A CTD measures conductivity, temperature and depth. The conductivity is then used to calculate salinity. CTD measurements where taken at three different locations in the Oslo fjord shown in figure \ref*{fig:map_ctd} during two separate cruises. The morning cruise only gathered CTD data from locations A and C. The afternoon cruise gathered data from all three locations. 
 
@@ -140,7 +139,7 @@ These parameters are then used as input for the COARE 3.5 model to compute bulk 
 \subsection{Secchi disc}
 A Secchi disc is a white disk attached to the end of a rope. This can be lowered into the water to assess the waters turbidity or transparency. The disk is lowered slowly until it is no longer visible, this depth is the `'`Secchi depth''. For a more accurate result, the disk was lowered twice with several students observing it. Each student kept their Secchi depth to themselves until the experiment was over. The average of these is then taken as the actual Secchi depth. 
 
-\newpage
+
 \section{Results}\label{sec:results}
 \setlength{\intextsep}{12pt}
 
@@ -191,7 +190,7 @@ Data was successfully gathered for locations A and C in figure \ref*{fig:map_ctd
 \newpage
 Figure \ref*{fig:location_A} shows depth profiles for location A in figure \ref*{fig:map_ctd} with \ref*{fig:morning_A} showing results from the morning cruise and \ref*{fig:afternoon_A} for the afternoon. Blue lines show potential density data, red is potential temperature and green is salinity. In each profile, the thinner dark line shows results from the handheld CTD, the lighter and thicker line shows results from the ship mounted CTD and the dashed line shows results from MET Norway's ROMS model. Figure \ref*{fig:location_C} shows equivalent results for location C.
 
-The handheld and ship CTD data agrees very well, especially in location C. In location A, the ship CTD shows slightly lower values and more noise than the handheld profile for potential density and salinity. It also has more noise but shows higher values for potential temperature below 10 meters. 
+The handheld and ship CTD data agrees very well, especially in location C. In location A, the ship CTD shows slightly lower values and more noise than the handheld profile for potential density and salinity. It also has more noise but shows higher values for potential temperature below 10 m. 
 
 The ROMS model replicates the shape of the potential temperature and salinity profiles well but has a positive bias for salinity. Notably this bias decreases with depth. For the potential temperature the ROMS model matches the observational data well for the first 5-7 m, but then has a negative bias for deeper values. The plotted potential density for ROMS is not considered since this is computed separately based on model salinity and potential temperature, and not actual model density data.
 
@@ -199,7 +198,7 @@ All profiles show a similar shape with the greatest change in the observed param
 
 There are some minor changes in the top few meters when comparing morning and afternoon measurements. For location A, surface potential density and salinity decrease from morning to afternoon whereas potential temperature increases. For location C, all three parameters show a very slight increase in the uppermost layer.
 
-Comparing locations A and C, A is more stratified in the top 10 meters, whereas C seems to have a relatively well mixed homogeneous top layer. Below 20 meters the locations are very similar.
+Comparing locations A and C, A is more stratified in the top 10 m, whereas C seems to have a relatively well mixed homogeneous top layer. Below 20 m the locations are very similar.
 
 \subsection{Drifters}
 
@@ -304,7 +303,7 @@ Table \ref*{tab:v1} and \ref*{tab:v2} show the distance traveled, time out drift
         \end{center}
     \end{table}
 
-    Table \ref*{tab:flux_params} shows an increase in relative humidity and air temperature throughout the day as well as a decrease in pressure. Winds change direction from NE in the morning to SE in the afternoon. Wind speed at location A decrease slightly whereas it increases at location C. 
+    Table \ref*{tab:flux_params} shows an increase in relative humidity and air temperature throughout the day as well as a decrease in pressure. Winds change direction from NE in the morning to SE in the afternoon. Wind speed at location A decrease slightly whereas it increases at location C. Secchi depth data for location A and C shows no large difference and assessment of the evolution throughout the day is impossible due to missing afternoon data.
     Morning rain has been neglected in flux computations since these were very short showers. Due to missing observations in the afternoon, the same values as the morning have been assumed for wave height and cloud cover as well as no rain.
 
     % COARE 3.5 flux computations
@@ -328,12 +327,28 @@ Table \ref*{tab:v1} and \ref*{tab:v2} show the distance traveled, time out drift
 
     Table \ref*{tab:flux_comp} shows results from the COARE model bulk flux calculations. Morning and afternoon fluxes are shown for locations A and C, but exact time information is unavailable for the afternoon measurements. Results show the sensible heat flux going from negative to positve throughout the day. The latent heat flux is negative in the morning for both locations. It increases throughout the day but only becomes positive in location C. Due to an observed cloud cover value of 8 oktas, the shortwave flux is zero in all cases. The net longwave flux shows very little change from morning to afternoon. Looking at the overall net heat flux we see that both locations have negative values in the morning. These have increased for the afternoon data, but still remain negative.
 
-
+\newpage
 \section{Discussion and conclusions}\label{sec:discussion}
 
-The ship CTD profile from location B in figure \ref*{fig:map_ctd} only goes down to 50 meters whereas ship profiles in location A and C go to down to 80 meters. This can be seen in the figures in appendix \ref*{app:CTD}. Presumably the sill in the oslo fjord is in location B thus creating a slight barrier for water at lower depths between location A and C in Vestfjorden and Bunnefjorden respectively.
+% model vs, obs
+Agreement between handheld and ship CTD observations is good, the slight deviations in figure \ref*{fig:location_A} for location A may be due to instrument precision or simply due to the noise in the data. This noise in the ship data could potentially be attributed to a slower decent speed, but there is no information to explore this further. The ROMS model data replicates the general shape of the potential temperature and salinity profiles, but seems to have a slight bias. A negative one for potential temperatrue and positve for salinity. Without knowing more datils about the model it is difficult to attribute this to anything specific and this would require further inverstigation. There is one section of the potential temperature profile which the ROMS model replicates very well in all four cases. This is near the surface and could be explained by SST data assimilation, but whether the model uses data assimilation has not been verified.
 
-Cloud cover was assessed to be 8 oktas, resulting in no shortwave flux. The observers lack of experience adds a large uncertainty here, since even a value of 7 oktas would result in quite a different net heat flux.
+% A vs. C
+The profiles for location A in figure \ref*{fig:location_A} show stabilizing of the water column throughout the day. This is assessed by looking at the potential density profiles. The morning has a constant value for the top few meters, whereas the afternoon shows a steady decrease in potential density. This can be attributed both to the increase in temperature of the surface layer and the decrease in salinity. This decrease in salinity may be caused by a virtual salinity flux due to evaporation or an influx of fresh water such as river runoff. In contrast, the potential density profiles for location C in figure \ref*{fig:location_C} show a minor destabilization caused by a slight decrease at the very surface. This change is marginal, and overall the top 5 m remain fairly homogeneous.
+
+% A vs. C and could B be interesting? 
+The ship CTD profile from location B in figure \ref*{fig:map_ctd} only goes down to 50 m whereas ship profiles in location A and C go down to 80 m. This can be seen in the figures in appendix \ref*{app:CTD}. Presumably the sill in the Oslo fjord is in location B thus creating a slight barrier for water at lower depths between location A and C in Vestfjorden and Bunnefjorden respectively. This sill was expected to possibly create some differences between the mixing characteristics in location A and C. Nothing in the data seems to suggest this, even when studying profile sections below 50 m seen in appendix \ref*{app:CTD}.
+
+% fluxes and their implitations
+% stabelizing or not?
+% does this match profile obs
+Flux calculations in table \ref*{tab:flux_comp} show an overall negative net heat flux in all four cases. This contrasts the observed increase in SST in figures  \ref*{fig:location_A} and \ref*{fig:location_C}. Cloud cover was assessed to be 8 oktas, resulting in no shortwave flux. The observers lack of experience adds a large uncertainty here, since even a value of 7 oktas would result in quite a different net heat flux. A positive heat flux would be expected to induce a temperature increase. The computed flux results would suggest a destabilization of the water column in both locations.
+
+% drfiters and wind
+Distacne and thus velocity values computed in tables \ref*{tab:v1} and \ref*{tab:v2} are based on the assumption that the drifters followed a straight path between start and end points. Figure \ref*{fig:drifter_tracks} shows that the drifters with available GPS tracks did follow very straight trajectories. This increases the confidence in the computed drifter velocities. The direction of drift from the starting point shown in figure \ref*{fig:drifters} matches the observed wind directions of NE an SE in the morning and afternoon respectively. This suggests that all drifter paths, even for drifters with deeper drogues, are influenced by wind direction. In both the morning and afternoon case drifter speeds seem to decrease with depth with would match the assumed decrease in vertical flux of horizontal momentum with depth. Strong currents would of course change this, as might be the case for the 5 m and 20 m drogue drifters in table \ref*{tab:v1}. Here the 20 m drogue had a higher velocity than the 5 m.
+
+%summary
+Overall the biggest observed difference in the fjord is between the stability evolution of the surface layers in location A and C. Here, the fact that A is much closer to the coast may have a large effect. All profiles also show a clear separation between an approximately 10 m deep surface layer and abruptly denser water below this point. This is probably due to the diurnal fluxes only penetrating the top few meters and the bottom experiencing little mixing in the inner fjord. Drifting patterns also seem largely dictated by wind direction which was surprising for the 20 m deep drogue. Due to quite messy or missing data and large focus on filming in the morning there are very large uncertainties in the data. Therefore, a similar study, possibly including more locations and consistent morning an afternoon measurements should be repeated to verify these results.
 
 \newpage
 \appendix

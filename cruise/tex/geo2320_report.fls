@@ -804,12 +804,12 @@ INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/wasy/wasyb10.tfm
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmr12.tfm
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
+INPUT /Users/alessiocanclini/geo2320_oceanography/cruise/tex/../figures/station_map_3_stations.png
+INPUT /Users/alessiocanclini/geo2320_oceanography/cruise/tex/../figures/station_map_3_stations.png
+INPUT /Users/alessiocanclini/geo2320_oceanography/cruise/tex/../figures/station_map_3_stations.png
+INPUT /Users/alessiocanclini/geo2320_oceanography/cruise/tex/../figures/station_map_3_stations.png
+INPUT /Users/alessiocanclini/geo2320_oceanography/cruise/tex/../figures/station_map_3_stations.png
 INPUT /usr/local/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map
-INPUT /Users/alessiocanclini/geo2320_oceanography/cruise/tex/../figures/station_map_3_stations.png
-INPUT /Users/alessiocanclini/geo2320_oceanography/cruise/tex/../figures/station_map_3_stations.png
-INPUT /Users/alessiocanclini/geo2320_oceanography/cruise/tex/../figures/station_map_3_stations.png
-INPUT /Users/alessiocanclini/geo2320_oceanography/cruise/tex/../figures/station_map_3_stations.png
-INPUT /Users/alessiocanclini/geo2320_oceanography/cruise/tex/../figures/station_map_3_stations.png
 INPUT /Users/alessiocanclini/geo2320_oceanography/cruise/tex/../figures/combined_profiles/Location_A_morning_cruise.png
 INPUT /Users/alessiocanclini/geo2320_oceanography/cruise/tex/../figures/combined_profiles/Location_A_morning_cruise.png
 INPUT /Users/alessiocanclini/geo2320_oceanography/cruise/tex/../figures/combined_profiles/Location_A_morning_cruise.png
