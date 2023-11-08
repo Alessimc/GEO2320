@@ -112,7 +112,7 @@ All data analysis and plotting was done in Python using the Pandas and Matplotli
 \subsection{CTD measurements}
 A CTD measures conductivity, temperature and depth. The conductivity is then used to calculate salinity. CTD measurements where taken at three different locations in the Oslo fjord shown in figure \ref*{fig:map_ctd} during two separate cruises. The morning cruise only gathered CTD data from locations A and C. The afternoon cruise gathered data from all three locations. 
 
-Measurements where in all cases taken with a handheld CastAway CTD attached to a rope that was fed manually by students, and a ship mounted SeaBird CTD. The ship mounted CTD was lowered into the water by the crew using a crane. The water depth was checked by computation with the bridge to avoid the CTD sitting at the bottom. CastAway measurements were limited by the length of the rope.
+Measurements where in all cases taken with a handheld CastAway CTD attached to a rope that was fed manually by students, and a ship mounted SeaBird CTD. The ship mounted CTD was lowered into the water by the crew using a crane. The water depth was checked by communicating with the bridge to avoid the CTD sitting at the bottom. CastAway measurements were limited by the length of the rope.
 
 \subsection{ROMS model}
 The model data used is from MET Norway's ROMS (Regional Ocean Modeling System) model. This data was extracted from MET's treadds server.
@@ -120,15 +120,15 @@ Salinity and potential temperature data are extracted directly from the model. D
 
 
 \subsection{Drifters}
-Drifter distance traveled is computed using the Geopy library. This with the logged start and finish times are used to compute an average linear velocity. This only looks at the velocity along a straight line between the two points and does not take into account the actual drifter path. Two drifters were equipped with GPS trackers to log the full path.
+Drifter distance traveled is computed using the Geopy library. This distance and the logged start and finish times are used to compute an average linear velocity. This only looks at the velocity along a straight line between the two points and does not take into account the actual drifter path. Two drifters were equipped with GPS trackers to log the full path.
 
 \subsection{Sea-air fluxes}
-For the computation of fluxes data was collected from panels on the bridge. The following parameters were noted:
+For the computation of fluxes, data was collected from panels on the bridge. The following parameters were noted:
 \begin{enumerate}[label=--, itemsep=0pt,parsep=0pt]
-        \item wind speed and direction (m/s and degrees clockwise from N),
+        \item wind speed (m/s) and direction,
         \item relative humidity (\%),
-        \item sea surface temperature (C),
-        \item air temperature (C),
+        \item sea surface temperature (\textdegree C),
+        \item air temperature (\textdegree C),
         \item mean sea level pressure (hPa).
 \end{enumerate}
 
@@ -145,7 +145,7 @@ A Secchi disc is a white disk attached to the end of a rope. This can be lowered
 
 
 \subsection{CTD Profiles}
-Data was successfully gathered for locations A and C in figure \ref*{fig:map_ctd} on both the morning ang afternoon cruise. Data from location B was unfortunately only gathered in the afternoon. This section will therefore focus on locations A and C. Exact location coordinates and timestamps for all profiles can be found in appendix \ref*{app:CTD} and \ref*{app:model}.
+Data was successfully gathered for locations A and C in figure \ref*{fig:map_ctd} on both the morning and afternoon cruise. Data from location B was unfortunately only gathered in the afternoon. This section will therefore focus on locations A and C. Exact location coordinates and timestamps for all profiles can be found in appendix \ref*{app:CTD} and \ref*{app:model}.
 
 \begin{figure}[H]
     \begin{adjustwidth}{-2.5cm}{-2.5cm}  % Adjust the values to change the margins
@@ -163,7 +163,7 @@ Data was successfully gathered for locations A and C in figure \ref*{fig:map_ctd
     \end{subfigure}
     \end{adjustwidth}
     
-    \caption{Depth profile of potential density, potential temperature and salinity at location A from handheld and ship CTDs as well as the ROMS model}
+    \caption{Depth profile of potential density, potential temperature and salinity at location A from handheld and ship CTDs as well as the ROMS model.}
     \label{fig:location_A}
 \end{figure}
 
@@ -183,7 +183,7 @@ Data was successfully gathered for locations A and C in figure \ref*{fig:map_ctd
     \end{subfigure}
     \end{adjustwidth}
     
-    \caption{Depth profile of potential density, potential temperature and salinity at location C from handheld and ship CTDs as well as the ROMS model}
+    \caption{Depth profile of potential density, potential temperature and salinity at location C from handheld and ship CTDs as well as the ROMS model.}
     \label{fig:location_C}
 \end{figure}
 
@@ -208,13 +208,13 @@ Comparing locations A and C, A is more stratified in the top 10 m, whereas C see
     \begin{subfigure}{0.5\textwidth}
             \centering
             \includegraphics[width=1.\linewidth]{../figures/drifters/drifters_tokt1.png}
-            \caption{Morning cruise}
+            \caption{Morning cruise.}
             \label{fig:drifter_1}
     \end{subfigure}%
     \begin{subfigure}{0.5\textwidth}
             \centering
             \includegraphics[width=1.\linewidth]{../figures/drifters/drifters_tokt2.png}
-            \caption{Afternoon cruise}
+            \caption{Afternoon cruise.}
             \label{fig:drifter_2}
     \end{subfigure}
     % \end{adjustwidth}
@@ -223,14 +223,13 @@ Comparing locations A and C, A is more stratified in the top 10 m, whereas C see
     \label{fig:drifters}
 \end{figure}
 
-Figure \ref*{fig:drifters} shows the start and end positions of four drifters with drogues at different depths (0m, 3m, 5m and 20m). Figure \ref*{fig:drifter_1} shows results from the morning cruise and figure \ref*{fig:drifter_2} the afternoon. Most notably, the yellow drifter with the 0m drogue travels furthest from the starting position (red cross) in both cases. The other three do not drift as far and remain closer together.
+Figure \ref*{fig:drifters} shows the start and end positions of four drifters with drogues at different depths (0m, 3m, 5m and 20m). Figure \ref*{fig:drifter_1} shows results from the morning cruise and figure \ref*{fig:drifter_2} the afternoon. Most notably, the yellow drifter with the 0m drogue (no drogue) travels furthest from the starting position (red cross) in both cases. The other three do not drift as far and remain closer together. In figure \ref*{fig:drifter_2} the drifter with the deepest drogue moves very little, but in a different direction to the other three.
 
 % drifter tracks
 \begin{figure}[H]
         \centering
         \includegraphics[width=1.\linewidth]{/Users/alessiocanclini/geo2320_oceanography/cruise/data/drifters/studenttokt_20230928.png}
-        \caption{Morning cruise}
-        \caption{Three drifter tracks. The colorbar indicates time in hours
+        \caption{Trajectories of drifters with a GPS tracker. These are the drifters with 0m and 3m drogues. Three drifter tracks are shown. The color bar indicates time in hours
         after 0830 LT.}
         \label{fig:drifter_tracks}
     \end{figure}
@@ -303,7 +302,7 @@ Table \ref*{tab:v1} and \ref*{tab:v2} show the distance traveled, time out drift
         \end{center}
     \end{table}
 
-    Table \ref*{tab:flux_params} shows an increase in relative humidity and air temperature throughout the day as well as a decrease in pressure. Winds change direction from NE in the morning to SE in the afternoon. Wind speed at location A decrease slightly whereas it increases at location C. Secchi depth data for location A and C shows no large difference and assessment of the evolution throughout the day is impossible due to missing afternoon data.
+    Table \ref*{tab:flux_params} shows an increase in relative humidity and air temperature throughout the day as well as a decrease in pressure. Winds change direction from NE in the morning to SE in the afternoon. Wind speed at location A decrease slightly whereas it increases at location C. Secchi depth data for location A and C shows no large difference and assessment of the evolution throughout the day is impossible due to missing afternoon data. From the results, shortwave radiation penetrates slightly deeper in location A.
     Morning rain has been neglected in flux computations since these were very short showers. Due to missing observations in the afternoon, the same values as the morning have been assumed for wave height and cloud cover as well as no rain.
 
     % COARE 3.5 flux computations
@@ -345,10 +344,10 @@ The ship CTD profile from location B in figure \ref*{fig:map_ctd} only goes down
 Flux calculations in table \ref*{tab:flux_comp} show an overall negative net heat flux in all four cases. This contrasts the observed increase in SST in figures  \ref*{fig:location_A} and \ref*{fig:location_C}. Cloud cover was assessed to be 8 oktas, resulting in no shortwave flux. The observers lack of experience adds a large uncertainty here, since even a value of 7 oktas would result in quite a different net heat flux. A positive heat flux would be expected to induce a temperature increase. The computed flux results would suggest a destabilization of the water column in both locations.
 
 % drfiters and wind
-Distacne and thus velocity values computed in tables \ref*{tab:v1} and \ref*{tab:v2} are based on the assumption that the drifters followed a straight path between start and end points. Figure \ref*{fig:drifter_tracks} shows that the drifters with available GPS tracks did follow very straight trajectories. This increases the confidence in the computed drifter velocities. The direction of drift from the starting point shown in figure \ref*{fig:drifters} matches the observed wind directions of NE an SE in the morning and afternoon respectively. This suggests that all drifter paths, even for drifters with deeper drogues, are influenced by wind direction. In both the morning and afternoon case drifter speeds seem to decrease with depth with would match the assumed decrease in vertical flux of horizontal momentum with depth. Strong currents would of course change this, as might be the case for the 5 m and 20 m drogue drifters in table \ref*{tab:v1}. Here the 20 m drogue had a higher velocity than the 5 m.
+Distacne and thus velocity values computed in tables \ref*{tab:v1} and \ref*{tab:v2} are based on the assumption that the drifters followed a straight path between start and end points. Figure \ref*{fig:drifter_tracks} shows that the drifters with available GPS tracks did follow very straight trajectories. This increases the confidence in the computed drifter velocities which assume a straight line. The direction of drift from the starting point shown in figure \ref*{fig:drifters} matches the observed wind directions of NE an SE in the morning and afternoon respectively, except for the deepest drogue in the afternoon. This suggests that most drifter paths, even for drifters with deeper drogues, are mainly influenced by wind direction. The deepest drogue in the afternoon moves slightly SW whilst the others move NW. This indicates that the deeper currents might be going in a different direction compared to the wind. As expected the deepest drogue is less influenced by the wind direction. In both the morning and afternoon case drifter speeds seem to decrease with depth which would match the assumed decrease in vertical flux of horizontal momentum with depth. Strong currents would of course change this, as might be the case for the 5 m and 20 m drogue drifters in table \ref*{tab:v1}. Here the 20 m drogue had a higher velocity than the 5 m.
 
 %summary
-Overall the biggest observed difference in the fjord is between the stability evolution of the surface layers in location A and C. Here, the fact that A is much closer to the coast may have a large effect. All profiles also show a clear separation between an approximately 10 m deep surface layer and abruptly denser water below this point. This is probably due to the diurnal fluxes only penetrating the top few meters and the bottom experiencing little mixing in the inner fjord. Drifting patterns also seem largely dictated by wind direction which was surprising for the 20 m deep drogue. Due to quite messy or missing data and large focus on filming in the morning there are very large uncertainties in the data. Therefore, a similar study, possibly including more locations and consistent morning an afternoon measurements should be repeated to verify these results.
+Overall the biggest observed difference in the fjord is between the stability evolution of the surface layers in location A and C. Here, the fact that A is much closer to the coast may have an effect. All profiles also show a clear separation between an approximately 10 m deep surface layer and abruptly denser water below this point. This is probably due to the diurnal fluxes only penetrating the top few meters and the bottom experiencing little mixing in the inner fjord. Drifting patterns seem largely dictated by wind direction, but this influence decreases with depth as expected. Due to quite messy or missing data and large focus on filming in the morning there are very large uncertainties in the data. Therefore, a similar study, possibly including more locations and consistent morning an afternoon measurements should be repeated to verify these results.
 
 \newpage
 \appendix
